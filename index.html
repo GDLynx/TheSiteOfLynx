@@ -14,6 +14,7 @@ body {
     border-radius: 50%;
     position: relative;
     top: 80px;
+    left: 10px; /* For IE, not Safari */
     z-index: 0;
     /* behavior: url(PIE.htc); /* remove if you don't care about IE8 */ 
 }
@@ -37,7 +38,7 @@ body {
 	*/
 	position: fixed;
 	top: 100px;
-	padding-left: 90px;
+	padding-left: 0px; /* Safari: 90px, IEL 0px */
 	text-align: center;
 	font-size: 56px;
 }
